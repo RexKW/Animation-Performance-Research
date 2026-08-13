@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+export const dynamic = 'force-dynamic';
 
 export default function SvgSsrPage() {
   // Read the file securely on the server
@@ -10,7 +11,7 @@ export default function SvgSsrPage() {
     <main>
       <h1>SVG - SSR</h1>
       {/* Injects the <svg> tags directly into the initial HTML payload */}
-      <div dangerouslySetInnerHTML={{ __html: svgContent }} />
+      <div dangerouslySetInnerHTML={{ __html: svgContent }} className='w-[400px] h-[200px]'/>
     </main>
   );
 }

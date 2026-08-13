@@ -15,7 +15,7 @@ export default function SvgCsrPage() {
     <main>
       <h1>SVG - CSR</h1>
       {svgContent ? (
-        <div dangerouslySetInnerHTML={{ __html: svgContent }} />
+        <div dangerouslySetInnerHTML={{ __html: svgContent }}  className='w-[400px] h-[200px]'/>
       ) : (
         <p>Loading SVG...</p>
       )}

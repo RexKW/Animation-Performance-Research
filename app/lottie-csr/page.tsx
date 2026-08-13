@@ -19,7 +19,7 @@ export default function LottieCsrPage() {
     <main>
       <h1>Lottie - CSR</h1>
       {animationData ? (
-        <Lottie animationData={animationData} autoplay={true} loop={true} />
+        <Lottie animationData={animationData} autoplay={true} loop={true} style={{ width: 400, height: 200 }} />
       ) : (
         <p>Loading animation...</p>
       )}
