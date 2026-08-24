@@ -12,7 +12,7 @@ export default function LottiePlayer({ animationData }: LottiePlayerProps) {
       animationData={animationData} 
       autoplay={true}
       loop={true} 
-      style={{ width: 400, height: 200 }} 
+      style={{ width: 512, height: 387 }} 
     />
   );
 }

@@ -6,7 +6,7 @@ export default function SvgCsrPage() {
 
   useEffect(() => {
     // The client fetches the SVG file after page load
-    fetch('/ProgressBar.svg')
+    fetch('/Animation2.svg')
       .then((res) => res.text())
       .then((data) => setSvgContent(data));
   }, []);
@@ -15,7 +15,7 @@ export default function SvgCsrPage() {
     <main>
       <h1>SVG - CSR</h1>
       {svgContent ? (
-        <div dangerouslySetInnerHTML={{ __html: svgContent }}  className='w-[400px] h-[200px]'/>
+        <div dangerouslySetInnerHTML={{ __html: svgContent }}  className='w-[512px] h-[387px]'/>
       ) : (
         <p>Loading SVG...</p>
       )}

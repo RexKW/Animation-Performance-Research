@@ -10,7 +10,7 @@ export default function LottieCsrPage() {
 
   useEffect(() => {
     // The client makes a network request for the JSON AFTER initial load
-    fetch('/ProgressBar.json')
+    fetch('/Animation2.json')
       .then((res) => res.json())
       .then((data) => setAnimationData(data));
   }, []);
@@ -19,7 +19,7 @@ export default function LottieCsrPage() {
     <main>
       <h1>Lottie - CSR</h1>
       {animationData ? (
-        <Lottie animationData={animationData} autoplay={true} loop={true} style={{ width: 400, height: 200 }} />
+        <Lottie animationData={animationData} autoplay={true} loop={true} style={{ width: 512, height: 387 }} />
       ) : (
         <p>Loading animation...</p>
       )}

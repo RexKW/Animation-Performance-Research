@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic';
 
 // Dynamically import the image tag so it only renders on the client
 const CsrGif = dynamic(
-  () => Promise.resolve(() => <img src="/ProgressBar.gif" alt="Progress Bar GIF" width={400} height={400} />),
+  () => Promise.resolve(() => <img src="/Animation2.gif" alt="Progress Bar GIF" width={512} height={387} />),
   { ssr: false }
 );
 
