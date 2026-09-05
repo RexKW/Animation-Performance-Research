@@ -14,11 +14,14 @@ export default function SvgCsrPage() {
   return (
     <main>
       <h1>SVG - CSR</h1>
-      {svgContent ? (
+      <div style={{ width: 512, height: 387, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        {svgContent ? (
         <div dangerouslySetInnerHTML={{ __html: svgContent }}  className='w-[512px] h-[387px]'/>
       ) : (
         <p>Loading SVG...</p>
       )}
+      </div>
+      
     </main>
   );
 }
