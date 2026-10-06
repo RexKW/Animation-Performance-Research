@@ -12,8 +12,8 @@ export default function SvgCsrPage() {
   }, []);
 
   return (
-    <main>
-      <h1>SVG - CSR</h1>
+    <main className='flex flex-col justify-center items-center'>
+      <h1 className='text-4xl'>SVG - CSR</h1>
       <div style={{ width: 512, height: 387, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         {svgContent ? (
         <div dangerouslySetInnerHTML={{ __html: svgContent }}  className='w-[512px] h-[387px]'/>

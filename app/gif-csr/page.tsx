@@ -9,8 +9,8 @@ const CsrGif = dynamic(
 
 export default function GifCsrPage() {
   return (
-    <main>
-      <h1>GIF - CSR</h1>
+    <main className='flex flex-col justify-center items-center'>
+      <h1 className='text-4xl'>GIF - CSR</h1>
       <CsrGif />
     </main>
   );

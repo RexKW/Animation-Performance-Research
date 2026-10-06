@@ -8,8 +8,8 @@ export default function SvgSsrPage() {
   const svgContent = fs.readFileSync(svgPath, 'utf8');
 
   return (
-    <main>
-      <h1>SVG - SSR</h1>
+    <main className='flex flex-col justify-center items-center'>
+      <h1 className='text-4xl'>SVG - SSR</h1>
       {/* Injects the <svg> tags directly into the initial HTML payload */}
       <div dangerouslySetInnerHTML={{ __html: svgContent }} className='w-[512px] h-[387px]'/>
     </main>

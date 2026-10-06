@@ -16,8 +16,8 @@ export default function LottieCsrPage() {
   }, []);
 
   return (
-    <main>
-      <h1>Lottie - CSR</h1>
+    <main className='flex flex-col justify-center items-center'>
+      <h1 className='text-4xl'>Lottie - CSR</h1>
       <div style={{ width: 512, height: 387, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         {animationData ? (
           <Lottie animationData={animationData} autoplay loop style={{ width: 512, height: 387 }} />

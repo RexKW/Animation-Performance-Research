@@ -6,8 +6,8 @@ import animationData from '@/public/Animation2.json';
 
 export default function LottieSsrPage() {
   return (
-    <main>
-      <h1>Lottie - SSR</h1>
+    <main className='flex flex-col justify-center items-center'>
+      <h1 className='text-4xl'>Lottie - SSR</h1>
       <LottiePlayer animationData={animationData} /> 
     </main>
   );
